@@ -16,12 +16,8 @@ class Alouette
       line[3..-2]
     end
     
-    verse = ""
-    2.times do 
-      verse << "Je te plumerai #{lines.first}.\n"
-    end
-    
     verse = "Je te plumerai #{lines.first}.\nJe te plumerai #{lines.first}."
+    
     lines.each do |line|
       verse += "\nEt #{line}!\nEt #{line}!"
     end
