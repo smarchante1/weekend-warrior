@@ -12,7 +12,6 @@ class Alouette
 
   def self.verse(verse_num)
     lines = lines_for_verse(verse_num)
-   
     lines.map! do |line|
       line[3..-2]
     end
@@ -24,7 +23,6 @@ class Alouette
     end
     
     verse = "Je te plumerai #{lines.first}.\nJe te plumerai #{lines.first}."
-
     lines.each do |line|
       verse += "\nEt #{line}!\nEt #{line}!"
     end
@@ -32,9 +30,8 @@ class Alouette
     2.times do 
       verse << "\nAlouette!"
     end
-
+    
     verse << "\nA-a-a-ah"
-
     return verse
   end
 
