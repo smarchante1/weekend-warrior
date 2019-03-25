@@ -6,7 +6,6 @@ class Alouette
     if verse_num == 0
       return [et_lines[0]]
     end
-    # correct et line depending on verse number
     return et_lines[0..verse_num].reverse
   end
 
@@ -40,13 +39,5 @@ class Alouette
     line << "Alouette, gentille alouette,\nAlouette, je te plumerai."
     return line
 
-    # verse = "Alouette, gentille alouette,\nAlouette, je te plumerai."
-    # line = ""
-    # 8.times do |i|
-    #   line << verse
-    #   line << ("\n\n" + self.verse(i))
-    #   line << ("\n\n" + verse)
-    # end
-    # return line
   end
 end
