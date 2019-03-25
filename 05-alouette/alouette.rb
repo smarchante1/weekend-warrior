@@ -17,7 +17,6 @@ class Alouette
     end
     
     verse = ""
-
     2.times do 
       verse << "Je te plumerai #{lines.first}.\n"
     end
